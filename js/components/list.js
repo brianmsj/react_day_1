@@ -2,12 +2,11 @@
 import React from 'react';
 import Card from './card';
 
-export default function List() {
+export default function List(props) {
     return (
-        <div className="card-list">
-            <Card />
-            <Card />
-            <Card />
+        <div>
+          <h3> {props.title} </h3>
+            <Card className="card-list" cardText = {props.cardText}/>
         </div>
     );
 }
